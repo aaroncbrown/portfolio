@@ -1,6 +1,6 @@
 body {
     background-color: rgb(220,220,220);
-    min-height: 100vh;
+    height: 100vh;
 }
 
 p, li {
@@ -10,7 +10,9 @@ p, li {
 
 body > div.container {
     background-color: rgb(250, 250, 250);
-    min-height: 100vh;
+    height: 100vh;
+    overflow-y: auto;
+    padding-bottom: 1rem;
 }
 
 nav.navbar {
@@ -44,11 +46,21 @@ nav.navbar li:hover {
 
 nav.navbar li a {
     color: rgb(220, 220, 220);
+    padding-left: 0;
+    padding-right: 0;
+    transition: .2s;
+}
+
+nav.navbar li a[href^="#"] {
+    color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 0);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
     transition: .2s;
 }
 
 nav.navbar li:hover a {
-    color: rgb(250, 250, 250);
+    color: rgb(255, 255, 0);
     transition: .2s;
 }
 
