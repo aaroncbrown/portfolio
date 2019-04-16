@@ -80,7 +80,7 @@ div.subtitle {
     font-size: Calc(.8vw + 1.5vh);  
 }
 
-#work-in-progress-message {
+.work-in-progress-message {
     color: rgb(255, 0, 0);
     font-size: 1.8vh;
     font-size: Calc(.8vw + 1.5vh);
